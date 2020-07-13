@@ -1,4 +1,4 @@
-package main.java.com.hw7.Family;
+package main.java.com.lahuta.family;
 
 import java.util.Comparator;
 

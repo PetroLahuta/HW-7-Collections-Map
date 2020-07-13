@@ -1,11 +1,11 @@
-package main.java.com.hw7;
+package main.java.com.lahuta;
 
 import java.util.HashSet;
 import java.util.Set;
 
 public class RemovingIdenticalNumbers {
     public static void removingDublicates() {
-        Set<Integer> hash_Set = new HashSet();
+        Set<Integer> hash_Set = new HashSet<>();
         hash_Set.add(1);
         hash_Set.add(2);
         hash_Set.add(3);

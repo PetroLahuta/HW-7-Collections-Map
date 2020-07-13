@@ -1,20 +1,18 @@
-package main.java.com.hw7.Executor;
+package main.java.com.lahuta.executor;
 
-import main.java.com.hw7.Family.ComporatorOfFamilie;
-import main.java.com.hw7.Family.ComporatorToEmblemsFamily;
-import main.java.com.hw7.Family.Family;
-import main.java.com.hw7.RemovingIdenticalNumbers;
+import main.java.com.lahuta.family.ComporatorOfFamilie;
+import main.java.com.lahuta.family.ComporatorToEmblemsFamily;
+import main.java.com.lahuta.family.Family;
+import main.java.com.lahuta.RemovingIdenticalNumbers;
 
 import java.util.Map;
 import java.util.TreeMap;
 
 public class Executor {
-    public static void start() {
-        RemovingIdenticalNumbers.removingDublicates();
-        Executor.goToFamily();
-    }
 
-    public static void goToFamily() {
+    public void removingAndGoToFamily() {
+        RemovingIdenticalNumbers.removingDublicates();
+
         Map<Family, Integer> family = new TreeMap<>();
         family.put(new Family("Arthur", 8, "King", "Lion"), 1);
         family.put(new Family("Feridinand", 11, "Marquis", "chariot with a rider"), 2);
@@ -41,5 +39,4 @@ public class Executor {
         familyEmblemSort.putAll(family);
         familyEmblemSort.forEach((Integer, Family) -> System.out.println(Integer + " " + Family));
     }
-
 }
